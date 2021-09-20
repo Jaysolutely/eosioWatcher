@@ -1,0 +1,15 @@
+{
+  "name": "eosiowatcher",
+  "source": "src/app/index.html",
+  "scripts": {
+    "start": "node src/server & PID=$! && parcel && kill $PID"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "parcel": "^2.0.0-rc.0",
+    "jsoneditor": "^9.5.5",
+    "lit-html": "^1.4.1"
+  }
+}
