@@ -27,8 +27,10 @@ function setBlockdata(index) {
 }
 
 function handleNewBlock({ data: block_num }) {
-  list.push({ block_num, blockdata: null });
-  refresh();
+  if (block_num > 0) {
+    list.push({ block_num, blockdata: null });
+    refresh();
+  }
 }
 
 function refresh() {
@@ -50,6 +52,7 @@ function refresh() {
 
 const events = new EventSource("http://localhost:8887/blocks");
 events.onmessage = handleNewBlock;
+events.onerror = console.log;
 
 render(
   html`<h1>Latest transactions</h1>`,

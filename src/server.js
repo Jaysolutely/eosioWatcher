@@ -26,9 +26,11 @@ const server = http.createServer((req, res) => {
       "Access-Control-Allow-Origin": "*",
     });
     client = res;
+    const interval = setInterval(() => client.write(`data: 0\n\n`), 2000);
     req.on("close", () => {
       console.log(`client connection closed`);
       client = null;
+      clearInterval(interval);
     });
   } else {
     res.writeHead(404);
