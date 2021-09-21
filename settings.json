@@ -1,5 +1,0 @@
-{
-  "pathToLog": "~/Projects/eosioTestMultiProd/accountnum11/blockchain/nodeos.log",
-  "serverPort": 8887,
-  "eosioNodeUrl": "http://localhost:8888"
-}

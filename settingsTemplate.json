@@ -1,0 +1,5 @@
+{
+  "pathToLog": "<enter path to nodeos.log>",
+  "serverPort": 8887,
+  "eosioNodeUrl": "http://localhost:8888"
+}

@@ -1,6 +1,6 @@
 import { html, render } from "lit-html";
 import JSONEditor from "jsoneditor";
-import { eosioNodeUrl } from "../../settings.json";
+import { eosioNodeUrl } from "../../mySettings.json";
 
 const container = document.getElementById("editor-container");
 const editor = new JSONEditor(container, { mode: "view" });
