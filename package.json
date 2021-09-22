@@ -2,7 +2,7 @@
   "name": "eosiowatcher",
   "source": "src/app/index.html",
   "scripts": {
-    "start": "node src/server & PID=$! && parcel && kill $PID"
+    "start": "node src/server & PID=$! && parcel && kill $PID || kill $PID"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
